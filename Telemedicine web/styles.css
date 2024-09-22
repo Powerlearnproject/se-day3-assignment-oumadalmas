@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    height: 80px;
+    width: 100px;
+    margin: auto;
+
+}
+
+span{
+    color: #08C076;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1D366F;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    }
+
+    h1{
+        margin: 10px 200px;
+        font-size: 50px;
+        letter-spacing: 2px;
+    }
+
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    background-color: #08C076;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #1D366F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: white;
+    transition: 1s;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.content {
+    flex: 3;
+    padding: 1rem;
+    background-color: #f4f4f4;
+}
+
+#home {
+    margin: 100px;
+}
+#home p{
+    margin-top: 35px;
+}
+
+#services {
+    margin: 100px;
+}
+#services p{
+    margin-top: 35px;
+}
+
+#doctors {
+    margin: 100px;
+}
+#doctors p{
+    margin-top: 35px;
+}
+
+
+
+.sidebar {
+    flex: 1;
+    padding: 2rem;
+    background-color: #b8c6e6;
+}
+.sidebar h2{
+    color: #1D366F;
+    font-size: 20px
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    nav ul {
+        display: none;
+    }
+
+    nav::before {
+        content: "☰ Menu";
+        display: block;
+        cursor: pointer;
+        text-align: center;
+        background-color: #333;
+        color: white;
+        padding: 1rem;
+    }
+
+    nav.open ul {
+        display: block;
+    }
+}
+
+.content h2{
+    color:  #1D366F;
+}
+
+footer{
+    background-color: #1D366F;
+}
+
+footer p a{
+    color: white;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    color:  #08C076;
+    transition: 1s;
+}
+
+.sidebar ul a{
+    text-decoration: none;
+    color: #1D366F;
+}
+
+.sidebar ul a:hover {
+    color: #08C076;
+    transition: 1s;
+}
